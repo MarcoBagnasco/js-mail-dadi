@@ -8,19 +8,22 @@
  */
 
 // 1. & 2.
-var userNumber =  Math.floor(Math.random() * 6) + 1;
-console.log(userNumber);  //test
+var playerNumber =  Math.floor(Math.random() * 6) + 1;
+// console.log(userNumber);  //test
+document.getElementById('player-roll').innerHTML = playerNumber;
 var computerNumber =  Math.floor(Math.random() * 6) + 1;
-console.log(computerNumber); //test
+// console.log(computerNumber); //test
+document.getElementById('computer-roll').innerHTML = computerNumber;
+
 
 // 3.
-if(userNumber > computerNumber){
-    console.log('Player Wins!'); //test
+if(playerNumber > computerNumber){
+    // console.log('Player Wins!'); //test
     document.getElementById('result').innerHTML = 'Player Wins!';
-} else if(userNumber < computerNumber){
-    console.log('Computer Wins!'); //test
+} else if(playerNumber < computerNumber){
+    // console.log('Computer Wins!'); //test
     document.getElementById('result').innerHTML = 'Computer Wins!';
 } else {
-    console.log('It\'s a Draw!'); //test
+    // console.log('It\'s a Draw!'); //test
     document.getElementById('result').innerHTML = 'It\'s a Draw!';
 }
