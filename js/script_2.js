@@ -13,3 +13,14 @@ console.log(userNumber);  //test
 var computerNumber =  Math.floor(Math.random() * 6) + 1;
 console.log(computerNumber); //test
 
+// 3.
+if(userNumber > computerNumber){
+    console.log('Player Wins!'); //test
+    document.getElementById('result').innerHTML = 'Player Wins!';
+} else if(userNumber < computerNumber){
+    console.log('Computer Wins!'); //test
+    document.getElementById('result').innerHTML = 'Computer Wins!';
+} else {
+    console.log('It\'s a Draw!'); //test
+    document.getElementById('result').innerHTML = 'It\'s a Draw!';
+}
