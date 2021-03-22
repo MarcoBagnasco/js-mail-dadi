@@ -7,8 +7,9 @@
     4. Mostrare il vincitore
  */
 
-// 1.
+// 1. & 2.
 var userNumber =  Math.floor(Math.random() * 6) + 1;
 console.log(userNumber);  //test
 var computerNumber =  Math.floor(Math.random() * 6) + 1;
 console.log(computerNumber); //test
+
