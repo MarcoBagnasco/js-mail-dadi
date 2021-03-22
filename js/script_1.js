@@ -24,9 +24,9 @@ for(var i = 0; i < emailList.length; i++){
     }
 }
 if(emailFound){
-    console.log('Valid Email Address. Access allowed!'); //test
+    // console.log('Valid Email Address. Access allowed!'); //test
     document.getElementById('access').innerHTML = 'Valid Email Address. Access allowed!';
 } else {
-    console.log('Invalid Email Address. Access denied!'); //test
+    // console.log('Invalid Email Address. Access denied!'); //test
     document.getElementById('access').innerHTML = 'Invalid Email Address. Access denied!';
 }
