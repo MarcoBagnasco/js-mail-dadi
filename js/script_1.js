@@ -23,6 +23,10 @@ for(var i = 0; i < emailList.length; i++){
         break;
     }
 }
+
+// 4.
+document.getElementById('email').innerHTML = userEmail;
+
 if(emailFound){
     // console.log('Valid Email Address. Access allowed!'); //test
     document.getElementById('access').innerHTML = 'Valid Email Address. Access allowed!';

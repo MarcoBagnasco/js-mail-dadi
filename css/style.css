@@ -1,0 +1,33 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    font-size: 24px;
+    background-color: #222;
+}
+h2{
+    font-size: 40px;
+}
+
+/* APP MAIN */
+.app-main{
+    max-width: 1100px;
+    margin: 50px auto;
+    /* padding: 20px; */
+    text-align: center;
+    background-color: aqua;
+}
+/* Email Validation */
+.app-main .email-validation{
+    padding: 20px;
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/email.png');
+    background-size: contain;
+}
+.email-validation #email{
+    margin: 20px 0;   
+    text-decoration: underline;
+}
