@@ -8,12 +8,17 @@
  */
 
 // 1. & 2.
+var dice = ['one', 'two', 'three', 'four', 'five', 'six'];
 var playerNumber =  Math.floor(Math.random() * 6) + 1;
 // console.log(userNumber);  //test
-document.getElementById('player-roll').innerHTML = playerNumber;
+var playerDice = dice[playerNumber - 1];
+
+document.getElementById('player-roll').innerHTML = playerNumber + '<span class="dice ' + playerDice + '"></span>';
+
 var computerNumber =  Math.floor(Math.random() * 6) + 1;
 // console.log(computerNumber); //test
-document.getElementById('computer-roll').innerHTML = computerNumber;
+var computerDice = dice[computerNumber - 1];
+document.getElementById('computer-roll').innerHTML = computerNumber + '<span class="dice ' + computerDice + '"></span>';
 
 
 // 3.

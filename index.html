@@ -8,6 +8,9 @@
 
     <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FONTAWSOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
 </head>
 <body>
     <!-- APP MAIN -->
@@ -20,16 +23,18 @@
         </section>
 
         <!-- Dice Game -->
-        <h2>Dice Game</h2>
-        <div class="game">
-            <div class="player">
-                Player's roll: <span id="player-roll"></span>
+        <section class="dice-game">
+            <h2>Dice Game</h2>
+            <div class="game">
+                <div class="player">
+                    Player's roll: <span id="player-roll"></span>
+                </div>
+                <div class="computer">
+                    Computer's roll: <span id="computer-roll"></span>
+                </div>
             </div>
-            <div class="computer">
-                Computer's roll: <span id="computer-roll"></span>
-            </div>
-        </div>
-        <div id="result">...</div>
+            <div id="result">...</div>
+        </section>
     </main>
 
     <!-- JAVASCRIPT -->
