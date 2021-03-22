@@ -8,4 +8,8 @@
 
 // 1.
 var emailList = ['marcobagnasco@virgilio.it', 'paoloduzioni@booleanteacher.com', 'lorenzobalsano@booleantutor.com', 'fabiogiorgini@booleantutor.com'];
-console.table(emailList); //test
+// console.table(emailList); //test
+
+// 2.
+var userEmail = prompt('Insert your email');
+console.log(userEmail); //test
