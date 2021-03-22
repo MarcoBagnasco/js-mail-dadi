@@ -25,7 +25,7 @@ h2{
 /* Email Validation */
 .app-main .email-validation{
     padding: 20px;
-    height: 30vh;
+    height: 35vh;
     background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/email.png');
     background-size: contain;
     border-bottom: 2px solid #000;
@@ -34,7 +34,22 @@ h2{
     margin: 20px 0;   
     text-decoration: underline;
 }
-
+.check::after{
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    color: #0f0;
+    text-shadow: 0 0 2px #000;
+}
+.uncheck::after{
+    content: '\f00d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    color: #f00;
+    text-shadow: 0 0 2px #000;
+}
 /* Dice Game */
 .app-main .dice-game{
     display: flex;
@@ -46,16 +61,28 @@ h2{
     background-position: bottom;
     background-size: cover;
 }
-
 /* Dice Number */
 .dice::after{
+    display: inline-block;
+    margin-left: 10px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 40px;
     color: #f00;
     text-shadow: 0 0 10px #000;
+    animation: roll 1.2s infinite;
 }
-
+@keyframes roll {
+    from, 10%, 20%, 30%{
+        transform: rotate(10deg);
+    }
+    5%, 15%, 25%, 35%{
+        transform: rotate(-10deg);
+    }
+    40%, to{
+        transform: rotate(0);
+    }
+}
 .one.dice::after{
     content: ' \f525';
 }
@@ -74,7 +101,7 @@ h2{
 .six.dice::after{
     content:' \f526'
 }
-
+/* Result */
 .dice-game #result{
     margin-top: 30px;
     padding: 10px 30px;

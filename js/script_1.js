@@ -29,8 +29,8 @@ document.getElementById('email').innerHTML = userEmail;
 
 if(emailFound){
     // console.log('Valid Email Address. Access allowed!'); //test
-    document.getElementById('access').innerHTML = 'Valid Email Address. Access allowed!';
+    document.getElementById('access').innerHTML = 'Valid Email Address. Access allowed!' + '<div class="check"></div>';
 } else {
     // console.log('Invalid Email Address. Access denied!'); //test
-    document.getElementById('access').innerHTML = 'Invalid Email Address. Access denied!';
+    document.getElementById('access').innerHTML = 'Invalid Email Address. Access denied!' + '<div class="uncheck"></div>';
 }
