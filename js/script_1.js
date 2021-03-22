@@ -12,4 +12,21 @@ var emailList = ['marcobagnasco@virgilio.it', 'paoloduzioni@booleanteacher.com',
 
 // 2.
 var userEmail = prompt('Insert your email');
-console.log(userEmail); //test
+// console.log(userEmail); //test
+
+// 3.
+var emailFound = false;
+for(var i = 0; i < emailList.length; i++){
+    // console.log(emailList[i]); //test
+    if(emailList[i] === userEmail){
+        emailFound = true;
+        break;
+    }
+}
+if(emailFound){
+    console.log('Valid Email Address. Access allowed!'); //test
+    document.getElementById('access').innerHTML = 'Valid Email Address. Access allowed!';
+} else {
+    console.log('Invalid Email Address. Access denied!'); //test
+    document.getElementById('access').innerHTML = 'Invalid Email Address. Access denied!';
+}
